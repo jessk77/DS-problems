@@ -27,7 +27,7 @@
 
 var reverse = (x) => {
   const number = x.toString();
-  const sign = x > 0 ? 1 : -1;
+  const sign = x >= 0 ? 1 : -1;
   let reverseStack = [];
   for (let i = number.length - 1; i >= 0; i--) {
     reverseStack.push(number[i]);
@@ -38,4 +38,4 @@ var reverse = (x) => {
   else return 0;
 };
 
-console.log("reversed number: ", reverse(123));
+console.log("reversed number: ", reverse(0));
