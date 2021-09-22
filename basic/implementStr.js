@@ -22,9 +22,8 @@
 // Output: 0
 
 var strStr = function (haystack, needle) {
-  if (haystack === "") {
+    if(needle==="")
     return 0;
-  }
   for (let i = 0; i < haystack.length; i++) {
     if (haystack[i] === needle[0]) {
       let isStr = true;
